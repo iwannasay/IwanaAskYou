@@ -230,7 +230,7 @@
     // Copy confirmation in success modal
     if (btnCopySummary) {
       btnCopySummary.addEventListener('click', () => {
-        const textToCopy = "Date unlocked: Approved by mutual good vibes! ✨ Looking forward to our hangout.";
+        const textToCopy = "Date unlocked! Looking forward to hanging out in person ✨";
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(textToCopy).then(() => {
             showToast("Copied confirmation text! 📋");
