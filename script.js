@@ -230,15 +230,15 @@
     // Copy confirmation in success modal
     if (btnCopySummary) {
       btnCopySummary.addEventListener('click', () => {
-        const textToCopy = "Date unlocked! Looking forward to hanging out in person ✨";
+        const textToCopy = "It's official! You just made me the happiest person ✨🤍";
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(textToCopy).then(() => {
-            showToast("Copied confirmation text! 📋");
+            showToast("Copied sweet message! 💌");
           }).catch(() => {
-            showToast("Date officially unlocked! ✨");
+            showToast("Officially unlocked! ✨🤍");
           });
         } else {
-          showToast("Date officially unlocked! ✨");
+          showToast("Officially unlocked! ✨🤍");
         }
       });
     }
@@ -306,7 +306,7 @@
     if (btnYes) btnYes.style.transform = 'scale(1)';
     if (dodgeTooltip) dodgeTooltip.classList.remove('show');
     if (invitationHint) {
-      invitationHint.textContent = "No pressure, genuinely. But the option is on the table.";
+      invitationHint.textContent = "No pressure at all, genuinely. But my heart is really hoping for a yes.";
       invitationHint.style.color = "var(--text-muted)";
       invitationHint.style.fontWeight = "normal";
     }

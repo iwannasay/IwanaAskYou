@@ -797,10 +797,12 @@ button {
 }
 
 .invitation-question {
-  font-size: 1.18rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  margin-bottom: 30px;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 4.2vw, 1.68rem);
+  font-weight: 700;
+  color: var(--accent-pink-dark);
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
 }
 
 /* Playful Invitation Zone */
